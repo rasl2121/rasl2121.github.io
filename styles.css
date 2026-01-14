@@ -1,0 +1,103 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+}
+
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url('https://images.unsplash.com/photo-1581090700227-1e37b190418e');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero-content {
+  text-align: center;
+  margin-top: 15%;
+}
+
+.hero-content h2 {
+  font-size: 2.5rem;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #f4a300;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.section {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.section.dark {
+  background: #222;
+  color: white;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #f4f4f4;
+  padding: 20px;
+  width: 250px;
+  border-radius: 8px;
+}
+
+form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea {
+  padding: 10px;
+}
+
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
