@@ -11,7 +11,7 @@ body {
 }
 
 .hero {
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+  background: linear-gradient(rgba(18, 0, 82, 0.85), rgba(18, 0, 82, 0.85)),
               url('plant.jpg');
   background-size: cover;
   background-position: center;
@@ -35,6 +35,11 @@ body {
 .navbar a {
   color: white;
   text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #9b7ff5;
 }
 
 .hero-content {
@@ -50,12 +55,17 @@ body {
   display: inline-block;
   margin-top: 20px;
   padding: 12px 25px;
-  background: #f4a300;
-  color: black;
+  background: #9b7ff5;
+  color: white;
   text-decoration: none;
   border-radius: 5px;
   border: none;
   cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #7c5fd4;
 }
 
 .section {
@@ -64,7 +74,7 @@ body {
 }
 
 .section.dark {
-  background: #222;
+  background: #120052;
   color: white;
 }
 
@@ -81,6 +91,17 @@ body {
   padding: 20px;
   width: 250px;
   border-radius: 8px;
+  border: 2px solid #120052;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(18, 0, 82, 0.3);
+}
+
+.card h3 {
+  color: #120052;
 }
 
 form {
@@ -93,10 +114,17 @@ form {
 
 input, textarea {
   padding: 10px;
+  border: 2px solid #120052;
+  border-radius: 5px;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #9b7ff5;
 }
 
 footer {
-  background: #111;
+  background: #120052;
   color: white;
   text-align: center;
   padding: 20px;
